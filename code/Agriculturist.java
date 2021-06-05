@@ -22,8 +22,6 @@ public class Agriculturist extends User{
 		text = textScan.nextLine();
 		Scanner topicScan = new Scanner(System.in);
 		topic = topicScan.nextLine();
-		textScan.close();
-		topicScan.close();
 		// Tha uparxei etoimo Danger h tha ftiaxnoume tote???
 		Announcement announ = new Announcement(text, dang, topic);
 	}

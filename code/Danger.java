@@ -1,4 +1,3 @@
-package agrismartProject;
 
 public class Danger {
 private String typeOfDanger;

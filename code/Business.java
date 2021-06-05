@@ -1,4 +1,5 @@
 
+
 public class Business {
  private String name;
  private String  address;

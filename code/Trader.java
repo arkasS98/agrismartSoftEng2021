@@ -8,4 +8,3 @@ public class Trader extends User{
         super(mail, pass, usname, fname, lname, addr, num);
     }
 }
-
