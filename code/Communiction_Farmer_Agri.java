@@ -1,6 +1,7 @@
 
 class Communication_Farmer_Agri extends Communication{
 
+
  //attributes
 	protected Agriculturist agriculturist;
 	

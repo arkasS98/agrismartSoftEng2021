@@ -1,3 +1,4 @@
+
 public class Cultivation {
 private double latitude;
 private double longtitude;

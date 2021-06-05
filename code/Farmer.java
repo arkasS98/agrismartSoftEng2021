@@ -1,20 +1,15 @@
 import java.util.ArrayList;
 
-public class Farmer extends User {
-	
-	//attributes
-	ArrayList<Cultivation> listOfCultivations /*= new ArrayList<Cultivation>()*/;
-	ArrayList<Product> listOfProducts /*= new ArrayList<Product>()*/;
-	
-	
-	//Constructor
-	
-	public Farmer(String mail, String pass, String usname, String fname, String lname, String addr, int num, Product product, Cultivation cultivation) {
+
+class Farmer extends User
+	{
+ 	public Farmer(String mail, String pass, String usname, String fname, String lname, String addr, int num) {
 		super(mail, pass, usname, fname, lname, addr, num);
-		this.ListOfProducts = new ArrayList<Product>;
-	    	this.ListOfProducts.add(product);
-	    	
-	    	this.ListOfCultivations = new ArrayList<Cultivation>;
-	    	this.ListOfCultivations.add(cultivation);
+		// TODO Auto-generated constructor stub
 	}
-}
+	ArrayList <Product> ListOfProducts;
+    ArrayList <Cultivation> ListOfCultivations;
+    
+    
+   
+  	}
