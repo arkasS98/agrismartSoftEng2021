@@ -5,7 +5,7 @@ class Communication_Farmer_Agri extends Communication{
 	protected Agriculturist agriculturist;
 	
 	//Constructor
-	public Farmer_Agriculturist_Communication(Farmer farmer, Agriculturist agriculturist, String topic) {
+	public Communication_Farmer_Agri(Farmer farmer, Agriculturist agriculturist, String topic) {
 		super(farmer, topic);
 		this.agriculturist = agriculturist;
 	}
