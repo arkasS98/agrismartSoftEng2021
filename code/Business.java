@@ -1,4 +1,3 @@
-package agrismartProject;
 
 public class Business {
  private String name;
