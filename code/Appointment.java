@@ -1,5 +1,5 @@
 import java.time.*;
-public class Appointment extends Farmer_Agriculturist_Communication{
+public class Appointment extends Communication_Farmer_Agri{
 	//attributes
 	private boolean availability;
 	private LocalDate meetingDate;
