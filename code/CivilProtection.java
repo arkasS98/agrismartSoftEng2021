@@ -48,6 +48,7 @@ import javax.swing.JSeparator;
 import javax.swing.ListModel;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
 import javax.swing.JTextField;
+import java.awt.Point;
 
 public class CivilProtectionGUI_methods  {
 
@@ -165,11 +166,23 @@ public class CivilProtectionGUI_methods  {
 				 "  ΧΑΝΙΩΝ   " , "   ΧΑΝΙΩΝ   " ,"   ΚΕΦΑΛΛΗΝΙΑΣ  " , "   ΜΕΣΣΗΝΙΑΣ   " ,"  ΛΑΣΙΘΙΟΥ   " , "  ΓΡΕΒΕΝΩΝ    " ,"  ΜΕΣΣΗΝΙΑΣ   " , "   ΖΑΚΥΝΘΟΥ   "  );
            
          l1.addAll(namesList);
-         JList<String> list = new JList<>(l1);  
-       
+         JList<String> list = new JList<>(l1);
+         list.setMaximumSize(new Dimension(222222, 22222220));
+         list.setLocation(new Point(111, 110));
          list.setBounds(10,91, 209,500);  
          
-	         desktopPane.add(list);  
+         JScrollPane scrollPanel = new JScrollPane(list);
+         scrollPanel.setLocation(10, 91);
+        
+         scrollPanel.setSize(209,500);  
+         
+        // scrollPanel.setViewportView(list);
+         
+         
+         
+        
+         
+	         desktopPane.add(scrollPanel);  
 	         desktopPane.setSize(400,400);  
 	         desktopPane.setLayout(null);
 	         
@@ -197,12 +210,6 @@ public class CivilProtectionGUI_methods  {
 	           
 	         l2.addAll(namesList2);
 	         
-	         
-	         JList<String> jlistDhmwn = new JList<>(l2); 
-	         jlistDhmwn.setMaximumSize(new Dimension(22222, 2147483647));
-	         jlistDhmwn.setBounds(239, 91, 164, 246);
-	         desktopPane.add(jlistDhmwn);
-	         
 		
 	         
 	         
@@ -220,7 +227,6 @@ public class CivilProtectionGUI_methods  {
 	         DangerCodes.setMinimumSize(new Dimension(11, 10));
 	         DangerCodes.setMaximumSize(new Dimension(11111, 111110));
 	         DangerCodes.setPreferredSize(new Dimension(10, 10));
-	         jlistDhmwn.setBounds(239, 91, 164, 263);
 	         desktopPane.add(DangerCodes);
 	         
 	         
@@ -272,6 +278,14 @@ public class CivilProtectionGUI_methods  {
 	         btnNewButton_1.setAutoscrolls(true);
 	         btnNewButton_1.setBounds(404, 186, 146, 37);
 	         desktopPane.add(btnNewButton_1);
+	         
+	         JScrollPane scrollPane_1 = new JScrollPane();
+	         scrollPane_1.setBounds(229, 93, 163, 259);
+	         desktopPane.add(scrollPane_1);
+	         
+	         
+	         JList<String> jlistDhmwn = new JList<>(l2);
+	         scrollPane_1.setViewportView(jlistDhmwn);
 	         //desktopPane.add(lblNewLabel_1_1_2);
 	         desktopPane.setVisible(true);  
 		
