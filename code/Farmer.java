@@ -8,14 +8,15 @@ import java.awt.Font;
 
 public class Farmer extends User{
 	
+	ArrayList <Product> ListOfProducts;
+   	ArrayList <Cultivation> ListOfCultivations;
+	
 	public Farmer(String mail, String pass, String usname, String fname, String lname, String addr, int num) {
 		super(mail, pass, usname, fname, lname, addr, num);
-		
-		// TODO Auto-generated constructor stub
+		this.listOfProducts = new ArrayList<Products>();
+		this.listOfCultivations = new ArrayList<Cultivations>();
 	}
 	
-	ArrayList <Product> ListOfProducts;
-    ArrayList <Cultivation> ListOfCultivations;
 
     
 	private JFrame frame;
