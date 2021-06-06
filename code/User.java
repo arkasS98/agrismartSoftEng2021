@@ -92,6 +92,12 @@ public class User {
 	}
 	//      ********Sets & Gets********
 	
+	public boolean Login(String username, String password) {
+	if((this.getUsername() == username) && (this.getPassword() == password))
+		return true;
+	else 
+		return false;
+	}
 	
 	
 
